@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ПИК — Покорите горы Краснодарского края</title>
+  <meta name="description" content="Идите в горы и открывайте новые вершины Кубани: уровень подготовки, снаряжение и маршруты.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page">
+
+  <header class="header">
+    <a class="header__logo" href="#start" aria-label="ПИК — на главную">ПИК</a>
+    <button class="header__burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-nav">
+      <span class="header__burger-line"></span>
+    </button>
+    <nav class="header__nav" id="main-nav" aria-label="Основная навигация">
+      <ul class="header__list">
+        <li class="header__item"><a class="header__link" href="#">Маршруты</a></li>
+        <li class="header__item"><a class="header__link" href="#">Снаряжение</a></li>
+        <li class="header__item"><a class="header__link" href="#">О нас</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+
+    <section class="hero" id="start">
+      <div class="hero__bg" aria-hidden="true">
+        <img class="hero__layer hero__layer--sky" data-parallax="0.5" src="img/sky.png" alt="">
+        <img class="hero__layer hero__layer--shade" data-parallax="0.5" src="img/bg-hero.png" alt="">
+        <img class="hero__layer hero__layer--mountains" data-parallax="0.2" src="img/mountains.png" alt="">
+        <img class="hero__layer hero__layer--fade" src="img/bg-content.png" alt="">
+      </div>
+
+      <div class="hero__content">
+        <h1 class="hero__title">Покорите Горы Краснодарского Края!</h1>
+        <a class="hero__scroll" href="#step-1">
+          листайте вниз
+          <svg class="hero__scroll-icon" width="14" height="18" viewBox="0 0 14 18" fill="none" aria-hidden="true">
+            <path d="M7 1v15M1.5 10.5L7 16l5.5-5.5" stroke="currentColor" stroke-width="1.2"/>
+          </svg>
+        </a>
+      </div>
+
+      <nav class="side-nav" aria-label="Навигация по разделам">
+        <ul class="side-nav__list">
+          <li class="side-nav__item"><a class="side-nav__link side-nav__link--active" href="#start" aria-current="true">Старт</a></li>
+          <li class="side-nav__item"><a class="side-nav__link" href="#step-1">01</a></li>
+          <li class="side-nav__item"><a class="side-nav__link" href="#step-2">02</a></li>
+          <li class="side-nav__item"><a class="side-nav__link" href="#step-3">03</a></li>
+        </ul>
+        <span class="side-nav__bar" aria-hidden="true"></span>
+      </nav>
+    </section>
+
+    <section class="steps">
+
+      <article class="step" id="step-1">
+        <span class="step__number" aria-hidden="true">01</span>
+        <div class="step__body">
+          <p class="step__label">Первые шаги</p>
+          <h2 class="step__title">Ваш уровень подготовки?</h2>
+          <p class="step__text">Определить свой уровень подготовки важно ещё до выхода на маршрут. В горах Краснодарского края найдётся всё: от лёгкой прогулки к Агурским водопадам до сложных восхождений в районе Красной Поляны. Выберите путь по силам: новичок, любитель, опытный турист или профессионал?</p>
+          <a class="step__more" href="#">
+            читать далее
+            <svg class="step__more-icon" width="22" height="14" viewBox="0 0 22 14" fill="none" aria-hidden="true">
+              <path d="M0 7h20M14.5 1.5L20 7l-5.5 5.5" stroke="currentColor" stroke-width="1.2"/>
+            </svg>
+          </a>
+        </div>
+        <img class="step__image step__image--1" src="img/photo-1.png" loading="lazy" decoding="async" width="566" height="720" alt="Туристы поднимаются по горному склону к вершине">
+      </article>
+
+      <article class="step step--reverse" id="step-2">
+        <span class="step__number" aria-hidden="true">02</span>
+        <div class="step__body">
+          <p class="step__label">Что взять с собой</p>
+          <h2 class="step__title">Собираем рюкзак в горы!</h2>
+          <p class="step__text">Начинать ходить в горы совсем не обязательно с дорогого снаряжения: многое наверняка уже есть дома. Начнём с одежды. Типичная ошибка новичков — джинсы и обычная городская одежда: если они намокнут или вы вспотеете, они станут тяжёлыми и начнут натирать. Лучше взять треккинговую обувь, дождевик и тёплый слой.</p>
+          <a class="step__more" href="#">
+            читать далее
+            <svg class="step__more-icon" width="22" height="14" viewBox="0 0 22 14" fill="none" aria-hidden="true">
+              <path d="M0 7h20M14.5 1.5L20 7l-5.5 5.5" stroke="currentColor" stroke-width="1.2"/>
+            </svg>
+          </a>
+        </div>
+        <img class="step__image step__image--2" src="img/photo-2.png" loading="lazy" decoding="async" width="566" height="720" alt="Двое туристов с рюкзаками и хаски отдыхают на фоне заснеженных гор">
+      </article>
+
+      <article class="step" id="step-3">
+        <span class="step__number" aria-hidden="true">03</span>
+        <div class="step__body">
+          <p class="step__label">Куда пойти</p>
+          <h2 class="step__title">Куда отправиться в горы?</h2>
+          <p class="step__text">Новичкам подойдут Агурские водопады и Ахштырское ущелье рядом с Сочи. Подготовленных туристов ждут тропы к горе Ахун и хребту Аибга в районе Красной Поляны. А если хочется тишины — отправляйтесь в Гуамское ущелье: там и каньон реки Курджипс, и узкоколейная железная дорога.</p>
+          <a class="step__more" href="#">
+            читать далее
+            <svg class="step__more-icon" width="22" height="14" viewBox="0 0 22 14" fill="none" aria-hidden="true">
+              <path d="M0 7h20M14.5 1.5L20 7l-5.5 5.5" stroke="currentColor" stroke-width="1.2"/>
+            </svg>
+          </a>
+        </div>
+        <img class="step__image step__image--3" src="img/photo-3.png" loading="lazy" decoding="async" width="566" height="720" alt="Группа туристов на скальном выступе среди соснового леса">
+      </article>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__about">
+      <a class="footer__logo" href="#start" aria-label="ПИК — наверх">ПИК</a>
+      <p class="footer__slogan">Идите в горы и открывайте новые вершины Кубани!</p>
+      <p class="footer__copyright">© 2026 ПИК. <a class="footer__legal" href="#">Условия и конфиденциальность</a></p>
+    </div>
+
+    <nav class="footer__nav" aria-labelledby="footer-blog">
+      <h2 class="footer__title" id="footer-blog">Больше в блоге</h2>
+      <ul class="footer__list">
+        <li class="footer__item"><a class="footer__link" href="#">О ПИК</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Наши авторы</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Стать автором</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Связаться с нами</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Конфиденциальность</a></li>
+      </ul>
+    </nav>
+
+    <nav class="footer__nav" aria-labelledby="footer-about">
+      <h2 class="footer__title" id="footer-about">Больше о ПИК</h2>
+      <ul class="footer__list">
+        <li class="footer__item"><a class="footer__link" href="#">Команда</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Вакансии</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Для прессы</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
